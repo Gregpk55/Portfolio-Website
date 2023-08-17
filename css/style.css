@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -87,7 +87,7 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-  background: url("/images/home.jpg") no-repeat;
+  background: url('/images/home.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -131,7 +131,7 @@ section {
 }
 
 .home-content .text-animate h3::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -201,7 +201,7 @@ section {
 }
 
 .btn-box .btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -246,7 +246,7 @@ section {
 }
 
 .home-sci a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -407,7 +407,7 @@ span {
 }
 
 .projects-box .projects-content::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -1.1rem;
@@ -427,7 +427,7 @@ span {
 }
 
 .projects-content .content::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -634,7 +634,7 @@ span {
 }
 
 .footer-iconTop a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
