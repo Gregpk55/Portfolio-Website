@@ -81,12 +81,6 @@
         About <span>Me</span><span class="animate scroll" style="--i: 1"></span>
       </h2>
 
-      <div class="about-img">
-        <img src="images/about.jpg" alt="" />
-        <span class="circle-spin"></span>
-        <span class="animate scroll" style="--i: 2"></span>
-      </div>
-
       <div class="about-content">
         <h3>
           Frontend Developer!<span class="animate scroll" style="--i: 3"></span>
@@ -117,14 +111,18 @@
       </div>
     </section>
 
-    <!-- projects -->
+    <!--  CF projects -->
     <section class="projects" id="projects">
       <h2 class="heading">
-        My <span>Projects</span
-        ><span class="animate scroll" style="--i: 1"></span>
+        <span>Career Foundry Projects</span>
+        <a href="javascript:void(0);" onclick="toggleVisibility('projectsContent', 'toggleProjects')">
+          <i class="bx bx-down-arrow-alt" id="toggleProjects"></i>
+      </a>
+      
+        <span class="animate scroll" style="--i: 1"></span>
       </h2>
-
-      <div class="projects-row">
+    
+      <div class="projects-row" id="projectsContent" style="display: none;">
         <div class="projects-column">
           <h3 class="title">
             Projects<span class="animate scroll" style="--i: 2"></span>
@@ -358,6 +356,50 @@
       </div>
     </section>
 
+    <!-- My Projects -->
+    <section class="projects" id="myProjects">
+      <h2 class="heading">
+        <span>My Projects</span>
+        <a href="javascript:void(0);" onclick="toggleVisibility('myProjectsContent', 'toggleMyProjects')">
+          <i class="bx bx-down-arrow-alt" id="toggleMyProjects"></i>
+        </a>
+        <span class="animate scroll" style="--i: 1"></span>
+      </h2>
+    
+      <div class="projects-row" id="myProjectsContent" style="display: none;">
+      <div class="projects-column">
+          <h3 class="title">
+              Projects<span class="animate scroll" style="--i: 2"></span>
+          </h3>
+
+          <div class="projects-box">
+              <div class="projects-content">
+                  <div class="content">
+                      <h3>Simple-JS-App (Example)</h3>
+                      <h4>Objective</h4>
+                      <p>
+                          To build a small web application with HTML, CSS, and
+                          JavaScript that loads data from an external API and enables
+                          the viewing of data points in detail.
+                      </p>
+                      <a href="https://github.com/Gregpk55/simple-js-app" target="_blank">
+                          <img src="./img/simplejsapp.png" alt="picture of simple js app" class="project-pic" />
+                      </a>
+                      <br />
+                      <h4 style="font-size: 1.5em">Skills Used:</h4>
+                      <ul style="font-size: 1.4em; padding-left: 20px">
+                          <li>HTML</li>
+                          <li>JS</li>
+                          <li>CSS</li>
+                      </ul>
+                  </div>
+              </div>
+              <span class="animate scroll" style="--i: 3"></span>
+          </div>
+      </div>
+  </div>
+</section>
+
     <!-- skills -->
     <section class="skills" id="skills">
       <h2 class="heading">
@@ -368,7 +410,7 @@
       <div class="skills-row">
         <div class="skills-column">
           <h3 class="title">
-            Coding Skills<span class="animate scroll" style="--i: 2"></span>
+            Familiar with<span class="animate scroll" style="--i: 2"></span>
           </h3>
 
           <div class="skills-box">
@@ -386,19 +428,11 @@
               </div>
 
               <div class="skills">
-                <h3>TypeScript</h3>
-              </div>
-
-              <div class="skills">
                 <h3>Python</h3>
               </div>
 
               <div class="skills">
                 <h3>React</h3>
-              </div>
-
-              <div class="skills">
-                <h3>Redux</h3>
               </div>
 
               <div class="skills">
@@ -441,7 +475,7 @@
               </div>
 
               <div class="skills">
-                <h3>Postman-2</h3>
+                <h3>Postman</h3>
               </div>
 
               <div class="skills">
@@ -450,18 +484,6 @@
 
               <div class="skills">
                 <h3>Bootstrap</h3>
-              </div>
-
-              <div class="skills">
-                <h3>Ajax</h3>
-              </div>
-
-              <div class="skills">
-                <h3>CORS</h3>
-              </div>
-
-              <div class="skills">
-                <h3>Expo</h3>
               </div>
 
               <div class="skills">
@@ -529,7 +551,7 @@
     <!-- footer design -->
     <footer class="footer">
       <div class="footer-text">
-        <p>Code Attribution: Code referenced/used from the video</p>
+        <p>Code Attribution: Code referenced</p>
         <p>
           Video Credit:
           <a href="https://www.youtube.com/watch?v=sQoiM7i5Nqc&t=1481s"

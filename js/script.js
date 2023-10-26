@@ -22,9 +22,11 @@ window.onscroll = () => {
       // active navbar links
       navLinks.forEach((links) => {
         links.classList.remove('active');
-        document
-          .querySelector(`header nav a[href*=${id}]`)
-          .classList.add('active');
+        const linkElement = document.querySelector(`header nav a[href*=${id}]`);
+if (linkElement) {
+    linkElement.classList.add('active');
+}
+
       });
       // active sections for animation on scroll
       sec.classList.add('show-animate');
@@ -53,3 +55,23 @@ window.onscroll = () => {
     footer.classList.remove('show-animate');
   }
 };
+
+// project display
+function toggleVisibility(contentID, toggleID) {
+  const contentElement = document.getElementById(contentID);
+  const toggleIcon = document.getElementById(toggleID);
+
+  if (!contentElement || !toggleIcon) {
+      console.error("Error: Missing content or toggle element.");
+      return;
+  }
+
+  if (contentElement.style.display === 'none' || contentElement.style.display === '') {
+      contentElement.style.display = 'block';
+      toggleIcon.classList.replace('bx-down-arrow-alt', 'bx-up-arrow-alt');
+  } else {
+      contentElement.style.display = 'none';
+      toggleIcon.classList.replace('bx-up-arrow-alt', 'bx-down-arrow-alt');
+  }
+}
+
