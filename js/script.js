@@ -75,3 +75,26 @@ function toggleVisibility(contentID, toggleID) {
   }
 }
 
+const boatSvgContainer = document.querySelector('.boat-container');
+const svgUrl = "img/boat.svg";
+
+function reloadSVG() {
+    boatSvgContainer.style.opacity = 0;
+    
+    setTimeout(() => {
+        boatSvgContainer.innerHTML = ''; 
+
+        const newSVG = document.createElement('object');
+        newSVG.setAttribute('type', 'image/svg+xml');
+        newSVG.setAttribute('data', svgUrl);
+        boatSvgContainer.appendChild(newSVG);
+
+        newSVG.addEventListener('load', function() {
+            boatSvgContainer.style.opacity = 1;
+            setTimeout(reloadSVG, 3500 - 500); 
+        });
+    }, 500); 
+}
+
+boatSvgContainer.style.transition = 'opacity 500ms';
+reloadSVG();
