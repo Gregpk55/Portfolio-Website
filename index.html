@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Greg Kennedy Web dev</title>
 
     <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +17,6 @@
   </head>
 
   <body>
-    
     <!-- header design -->
     <header class="header">
       <a href="#" class="logo"
@@ -41,8 +40,7 @@
     </header>
 
     <!-- home -->
-    
-    
+
     <section class="home show-animate" id="home">
       <div class="home-content">
         <h1>
@@ -60,12 +58,13 @@
       </div>
       <div class="outer-container">
         <div class="boat-container">
-          <object id="boatSvg" type="image/svg+xml" data="img/boat.svg"></object>
+          <object
+            id="boatSvg"
+            type="image/svg+xml"
+            data="img/boat.svg"
+          ></object>
         </div>
-        <div class="oval-mask"></div>
-    </div>
-        
-    
+      </div>
 
       <div class="home-sci">
         <a href="https://github.com/Gregpk55" target="blank">
@@ -80,17 +79,19 @@
         <span class="animate" style="--i: 6"></span>
       </div>
 
-      
-
       <div class="home-imgHover"></div>
       <span class="animate home-img" style="--i: 7"></span>
     </section>
-    
+
+    <!-- section divider -->
+    <div class="divider">
+      <img src="divider1.svg" alt="Curved Section Divider 1" />
+    </div>
 
     <!-- about design -->
     <section class="about" id="about">
       <h2 class="heading">
-        About <span>Me</span><span class="animate scroll" style="--i: 1"></span>
+        About 
       </h2>
 
       <div class="about-content">
@@ -98,44 +99,38 @@
           Frontend Developer!<span class="animate scroll" style="--i: 3"></span>
         </h3>
         <p>
-          Hey there, I'm Greg Kennedy, a web developer from Canada's west coast.
-          I've always been fascinated by how things work, from cars to complex
-          mechanical watches.
+          Hey! I'm Greg Kennedy from Canada's west coast. Always curious, I used to wonder about everything from cars to watches. 
           <span class="animate scroll" style="--i: 4"></span>
         </p>
         <p>
-          As technology surrounds us, my curiosity turned to websites and
-          software programs. I decided to pursue my passion and enrolled in a
-          entry level web design course. It was there that I found my new
-          passion for coding and problem solving.
+          Then, tech caught my eye. A web design course later, I was hooked to coding.
           <span class="animate scroll" style="--i: 4"></span>
         </p>
-
         <p>
-          Bringing ideas to life through programming became my joy. To deepen my
-          skills and knowledge, I joined Career Foundry, where I'm gaining a
-          solid foundation in web development. I'm excited about my journey
-          ahead and can't wait to showcase my expertise through my dynamic web
-          developer projects.
-
+          Every day is about learning and coding.  Excited for what's next!
           <span class="animate scroll" style="--i: 4"></span>
         </p>
       </div>
-      
     </section>
+
+    <!-- section divider -->
+    <div class="divider">
+      <img src="divider2.svg" alt="Curved Section Divider 2" />
+    </div>
 
     <!--  CF projects -->
     <section class="projects" id="projects">
       <h2 class="heading">
         <span>Career Foundry Projects</span>
-        <a href="javascript:void(0);" onclick="toggleVisibility('projectsContent', 'toggleProjects')">
+        <a
+          href="javascript:void(0);"
+          onclick="toggleVisibility('projectsContent', 'toggleProjects')"
+        >
           <i class="bx bx-down-arrow-alt" id="toggleProjects"></i>
-      </a>
-      
-        <span class="animate scroll" style="--i: 1"></span>
+        </a>
       </h2>
-    
-      <div class="projects-row" id="projectsContent" style="display: none;">
+
+      <div class="projects-row" id="projectsContent" style="display: none">
         <div class="projects-column">
           <h3 class="title">
             Projects<span class="animate scroll" style="--i: 2"></span>
@@ -322,12 +317,11 @@
                   interactions.
                 </p>
                 <p>
-                   2:Transition the command line Recipe app from
-                  Achievement 1 into a comprehensive web application using the
-                  Django web framework. This web version will introduce
-                  multi-user support, an admin panel, and a range of additional
-                  features while maintaining the core functionalities of the
-                  original app.
+                  2:Transition the command line Recipe app from Achievement 1
+                  into a comprehensive web application using the Django web
+                  framework. This web version will introduce multi-user support,
+                  an admin panel, and a range of additional features while
+                  maintaining the core functionalities of the original app.
                 </p>
                 <div>
                   <a
@@ -373,51 +367,68 @@
     <section class="projects" id="myProjects">
       <h2 class="heading">
         <span>My Projects</span>
-        <a href="javascript:void(0);" onclick="toggleVisibility('myProjectsContent', 'toggleMyProjects')">
+        <a
+          href="javascript:void(0);"
+          onclick="toggleVisibility('myProjectsContent', 'toggleMyProjects')"
+        >
           <i class="bx bx-down-arrow-alt" id="toggleMyProjects"></i>
         </a>
-        <span class="animate scroll" style="--i: 1"></span>
       </h2>
-    
-      <div class="projects-row" id="myProjectsContent" style="display: none;">
-      <div class="projects-column">
+
+      <div class="projects-row" id="myProjectsContent" style="display: none">
+        <div class="projects-column">
           <h3 class="title">
-              Projects<span class="animate scroll" style="--i: 2"></span>
+            Projects<span class="animate scroll" style="--i: 2"></span>
           </h3>
 
           <div class="projects-box">
-              <div class="projects-content">
-                  <div class="content">
-                      <h3>Simple-JS-Surf-App</h3>
-                      <h4>Objective</h4>
-                      <p>
-                          To build a small web application with HTML, CSS, and
-                          JavaScript that loads data from an external API and enables
-                          the viewing of data.
-                      </p>
-                      <a href="https://github.com/Gregpk55/simple-js-app" target="_blank">
-                          <img src="./img/simplejsapp.png" alt="picture of simple js app" class="project-pic" />
-                      </a>
-                      <br />
-                      <h4 style="font-size: 1.5em">Skills Used:</h4>
-                      <ul style="font-size: 1.4em; padding-left: 20px">
-                          <li>HTML</li>
-                          <li>JS</li>
-                          <li>CSS</li>
-                      </ul>
-                  </div>
+            <div class="projects-content">
+              <div class="content">
+                <h3>Simple-JS-Surf-App</h3>
+                <h4>Objective</h4>
+                <p>
+                  To build a small web application with HTML, CSS, and
+                  JavaScript that loads data from an external API and enables
+                  the viewing of data.
+                </p>
+                <a href="https://github.com/Gregpk55/Surf-App" target="_blank">
+                  <img
+                    src="./img/surf.png"
+                    alt="picture of simple js app"
+                    class="project-pic"
+                  />
+                </a>
+                <br />
+                <h4 style="font-size: 1.5em">Skills Used:</h4>
+                <ul style="font-size: 1.4em; padding-left: 20px">
+                  <li>HTML</li>
+                  <li>JS</li>
+                  <li>CSS</li>
+                </ul>
+
+                <h4 style="padding-top: 5px">
+                  <a href="https://gregpk55.github.io/Surf-App/" target="_blank"
+                    >Live App: https://gregpk55.github.io/Surf-App</a
+                  >
+                </h4>
               </div>
-              <span class="animate scroll" style="--i: 3"></span>
+            </div>
+            <span class="animate scroll" style="--i: 3"></span>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
+
+    <!-- section divider -->
+    <div class="divider">
+      <img src="divider1.svg" alt="Curved Section Divider 1" />
+    </div>
 
     <!-- skills -->
     <section class="skills" id="skills">
       <h2 class="heading">
-        My <span>Skills</span
-        ><span class="animate scroll" style="--i: 2"></span>
+        My <span>Skills</span>
+        
       </h2>
 
       <div class="skills-row">
@@ -518,6 +529,11 @@
       </div>
     </section>
 
+    <!-- section divider -->
+    <div class="divider">
+      <img src="divider2.svg" alt="Curved Section Divider 2" />
+    </div>
+
     <!-- contact -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
@@ -563,21 +579,6 @@
 
     <!-- footer design -->
     <footer class="footer">
-      <div class="footer-text">
-        <p>Code Attribution: Code referenced</p>
-        <p>
-          Video Credit:
-          <a href="https://www.youtube.com/watch?v=sQoiM7i5Nqc&t=1481s"
-            >Responsive Personal Portfolio</a
-          >
-          by <span itemprop="author">Codehal</span>
-        </p>
-
-        <br />
-
-        <span class="animate scroll" style="--i: 1"></span>
-      </div>
-
       <div class="footer-iconTop">
         <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
 
