@@ -1,0 +1,15 @@
+<!-- SVG with black line, shadow below -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="divider1">
+  <defs>
+    <filter id="shadowBelow1" x="0" y="0" width="150%" height="150%">
+      <feOffset result="offOut" in="SourceAlpha" dx="0" dy="4" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <rect width="1440" height="320" fill="white"></rect>
+  <path fill="none" stroke="black" stroke-width="4" d="M0,64L80,74.7C160,85,320,107,480,133.3C640,160,800,192,960,176C1120,160,1280,96,1360,64L1440,32" filter="url(#shadowBelow1)"></path>
+</svg>
+
+
+

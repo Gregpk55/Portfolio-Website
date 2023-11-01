@@ -22,9 +22,11 @@ window.onscroll = () => {
       // active navbar links
       navLinks.forEach((links) => {
         links.classList.remove('active');
-        document
-          .querySelector(`header nav a[href*=${id}]`)
-          .classList.add('active');
+        const linkElement = document.querySelector(`header nav a[href*=${id}]`);
+if (linkElement) {
+    linkElement.classList.add('active');
+}
+
       });
       // active sections for animation on scroll
       sec.classList.add('show-animate');
@@ -53,3 +55,46 @@ window.onscroll = () => {
     footer.classList.remove('show-animate');
   }
 };
+
+// project display
+function toggleVisibility(contentID, toggleID) {
+  const contentElement = document.getElementById(contentID);
+  const toggleIcon = document.getElementById(toggleID);
+
+  if (!contentElement || !toggleIcon) {
+      console.error("Error: Missing content or toggle element.");
+      return;
+  }
+
+  if (contentElement.style.display === 'none' || contentElement.style.display === '') {
+      contentElement.style.display = 'block';
+      toggleIcon.classList.replace('bx-down-arrow-alt', 'bx-up-arrow-alt');
+  } else {
+      contentElement.style.display = 'none';
+      toggleIcon.classList.replace('bx-up-arrow-alt', 'bx-down-arrow-alt');
+  }
+}
+
+const boatSvgContainer = document.querySelector('.boat-container');
+const svgUrl = "img/boat.svg";
+
+function reloadSVG() {
+    boatSvgContainer.style.opacity = 0;
+    
+    setTimeout(() => {
+        boatSvgContainer.innerHTML = ''; 
+
+        const newSVG = document.createElement('object');
+        newSVG.setAttribute('type', 'image/svg+xml');
+        newSVG.setAttribute('data', svgUrl);
+        boatSvgContainer.appendChild(newSVG);
+
+        newSVG.addEventListener('load', function() {
+            boatSvgContainer.style.opacity = 1;
+            setTimeout(reloadSVG, 3500 - 500); 
+        });
+    }, 500); 
+}
+
+boatSvgContainer.style.transition = 'opacity 500ms';
+reloadSVG();
